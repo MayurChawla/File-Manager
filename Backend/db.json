@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "123",
+      "icon": "📄",
+      "parentId": "698d785e-8729-43f0-be05-f6657cd933c4",
+      "id": "ab3a871d-42f8-462d-bcc0-bdf6a91ebcaf",
+      "type": "item"
+    },
+    {
+      "name": "test",
+      "isOpen": true,
+      "parentId": null,
+      "id": "698d785e-8729-43f0-be05-f6657cd933c4",
+      "type": "folder"
+    },
+    {
+      "title": "234",
+      "icon": "📄",
+      "parentId": "698d785e-8729-43f0-be05-f6657cd933c4",
+      "id": "8632bd02-3bcb-496d-a343-87dd2b4591ab",
+      "type": "item"
+    },
+    {
+      "name": "test2",
+      "isOpen": true,
+      "parentId": "698d785e-8729-43f0-be05-f6657cd933c4",
+      "id": "ccd67d15-d5bf-4bee-a47f-a53174f460de",
+      "type": "folder"
+    }
+  ]
+}

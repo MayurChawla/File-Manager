@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Add these styles for better grid appearance */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.item-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.folder-card {
+  background-color: #f5f5f5;
+}
+
+.drag-over {
+  border: 2px dashed #1976d2 !important;
+}
+
+
+/*  */
+
+
+.app{
+  background-color:#ebe1eb;
+  min-height: 100vh;
+}
+.folder {
+  margin-top: 6px;
+  background-color: rgb(194, 185, 185);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.inputContainer{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.inputContainer>span{
+  margin-top: 5px;
+}
+
+.inputContainer__input {
+  margin: 6px 0 0px 0;
+  padding: 5px;
+  display: flex;
+  border: 1px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.folder > span {
+  margin: 0 5px;
+}
+
+.folder > div > button {
+  font-size: 15px;
+  background-color: white;
+}
+
+.file {
+  margin-top: 5px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*  */
+
+/* Add to your CSS */
+.root-drop-zone {
+  transition: all 0.2s ease;
+}
+
+.root-drop-zone.active {
+  background-color: rgba(25, 118, 210, 0.1);
+  border-color: #1976d2;
+}
+
+.root-drop-zone.rejected {
+  border-color: #ff4444;
+}
+
+.item {
+  transition: transform 0.3s ease;
+}
+
+.deadzone:hover {
+  z-index: 1000;
+  background: #ccc;
+  opacity: 0.7;
+}
